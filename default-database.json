@@ -1,0 +1,25 @@
+{
+	"workout-log": {
+		"sessions-01": {
+			"pull-ups": {
+				"-LG01default": {
+					"kg": "12",
+					"reps": "3",
+					"done": "true"
+				},
+				"-LG02default": {
+					"kg": "12",
+					"reps": "3",
+					"done": "true"
+				},
+				"-LG03default": {
+					"kg": "12",
+					"reps": "3",
+					"done": "true"
+				}
+				
+			}
+		}
+	}
+
+}
