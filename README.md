@@ -1,2 +1,2 @@
 # StrongYou
-Crafted with love and passion by Victor, Bjartur &amp; Stefan
+Crafted with love and passion by Victor, Marcus, Bjartur &amp; Stefan
