@@ -1,9 +1,18 @@
 /* Scss Document */
 
 input {
-	width: 50px;
+	width: 30px;
 }
 
-body {
-	background: black;
+.custom-checkbox {
+	width: 30px;
+	height: 30px;
+	
+	&:before {
+		background-color: white !important;
+	}
+}
+
+input[type=number] {
+	border: 1 solid black;
 }
