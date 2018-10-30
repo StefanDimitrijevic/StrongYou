@@ -47,3 +47,10 @@ input {
   padding: 0 5px;
   background-color: #f7f7f7;
   color: rgba(0, 0, 0, 0.5); }
+
+.myBtn {
+  background-color: #f7f7f7; }
+
+/* SESSIONS PAGE */
+.headline p {
+  color: #3ba6f7; }
