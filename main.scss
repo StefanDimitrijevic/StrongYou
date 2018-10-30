@@ -12,6 +12,10 @@ input {
 			height: 25px;
 		  border-radius: 5px;
 		border: 1px solid grey;
+		
+		&:focus {
+			border-color: $primary-color;
+		}
 			
 		}
 	input[type=number]::-webkit-inner-spin-button, 
@@ -37,5 +41,8 @@ input {
 }
 
 .previous {
-	background-color: grey;
+	padding: 0 5px;
+	background-color: $secondary-color;
+	color: rgba(0,0,0,0.50);
+	 
 }
