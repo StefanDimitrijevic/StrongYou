@@ -23,13 +23,15 @@
 
 <body>
 <div class="container">
-<hr>
-<h2>Create new player</h2>
-<form action="">
-    <input type="text" id="name" placeholder="player name..." required class="form-control mt-3 shadow-sm ">
-    <input type="number" id="score" placeholder="score..." required class="form-control mt-3 shadow-sm ">
-    <button type="submit" id="submit" class="btn btn-primary btn-lg mt-3">Submit</button>
-</form>
+    <h2>All players and scores</h2>
+    <p id="output"></p>
+    <hr>
+    <h2>Create new player</h2>
+    <form action="">
+        <input type="text" id="name" placeholder="player name..." required class="form-control mt-3 shadow-sm ">
+        <input type="number" id="score" placeholder="score..." required class="form-control mt-3 shadow-sm ">
+        <button type="submit" id="submit" class="btn btn-primary btn-lg mt-3">Submit</button>
+    </form>
 </div>
 <script>
 			var database = firebase.database();
