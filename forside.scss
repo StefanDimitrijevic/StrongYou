@@ -1,0 +1,134 @@
+$menu-toggler-color: #333333;
+$sec-color: #f7f7f7; 
+$prim-color: #3ba6f7;
+
+#mainCont {
+        margin-top: 8%;
+        font-size: 12px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+
+        .navbar {
+            .animated-icon {
+                width: 30px;
+                height: 30px;
+                position: relative;
+                cursor: pointer;
+                margin-top: 50%;
+              }
+              
+              .animated-icon span {
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+
+              }
+              
+              .animated-icon span {
+                  background: $menu-toggler-color
+              }
+              
+              .animated-icon span:nth-child(1) {
+                top: 0px;
+              }
+              
+              .animated-icon span:nth-child(2) {
+                top: 10px;
+              }
+              
+              .animated-icon span:nth-child(3) {
+                top: 20px;
+              }
+              
+              .animated-icon.open span:nth-child(1) {
+                top: 11px;
+              }
+              
+              .animated-icon.open span:nth-child(2) {
+                opacity: 0;
+                left: -60px;
+              }
+              
+              .animated-icon.open span:nth-child(3) {
+                top: 11px;
+              }
+        
+        }
+
+        
+        #buttonrow {
+            background-color: $sec-color;
+            height: 50px !important;
+            padding-left: 0px !important;
+            margin-top: 8%;
+        }
+        #buttonrow button {
+            font-size: 14px;
+            border: none;
+            width: 100%;
+        }
+
+        .buttons button {
+            background-color: $prim-color;
+            height: 50px;
+            color: white;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            background-color: $prim-color !important;
+        }
+
+        .button2 {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            height: 50px;
+        }
+
+        .button2 button {
+            background-color: $sec-color;
+            height: 50px;
+            color: black;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        #profile_tekst {
+            margin-top: 2%;
+        }
+
+        #strenghtmodule {
+            margin-top: 5%;
+        }
+
+        #intromodule {
+            border: 1px solid $prim-color;
+            padding-top: 15px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-bottom: 5%;
+        }
+
+        #sessions {
+            margin-top: 8%;
+        }
+
+        #sessions h5 {
+            font-size: 8px;
+        }
+
+        #sessions p {
+            font-size: 8px;
+        }
+
+        .deler {
+            width: 75%;
+        }
+
+        .sessiontekst {
+            margin-top: 2% !important;
+        }
+    }
