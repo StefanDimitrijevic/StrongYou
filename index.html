@@ -10,12 +10,12 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBBI9sZCaACysE2DXkHZMlD3kLpbvX_-Dw",
-    authDomain: "class-demo-7ec9e.firebaseapp.com",
-    databaseURL: "https://class-demo-7ec9e.firebaseio.com",
-    projectId: "class-demo-7ec9e",
-    storageBucket: "class-demo-7ec9e.appspot.com",
-    messagingSenderId: "869032436459"
+    apiKey: "AIzaSyC9E6a7lkPI-TvYdNb2pIMedxmp1Raqudw",
+    authDomain: "strong-you-8514c.firebaseapp.com",
+    databaseURL: "https://strong-you-8514c.firebaseio.com",
+    projectId: "strong-you-8514c",
+    storageBucket: "strong-you-8514c.appspot.com",
+    messagingSenderId: "570859478860"
   };
   firebase.initializeApp(config);
 </script>
@@ -61,51 +61,6 @@
 		</tbody>
 	
 	</table>
-    <hr>
-    <h2>Create new player</h2>
-    <form action="">
-        <input type="text" id="name" placeholder="player name..." required class="form-control mt-3 shadow-sm ">
-        <input type="number" id="score" placeholder="score..." required class="form-control mt-3 shadow-sm ">
-        <button type="submit" id="submit" class="btn btn-primary btn-lg mt-3">Submit</button>
-    </form>
 </div>
-<script>
-			var database = firebase.database();
-			var submitButton = document.getElementById('submit');
-			submitButton.addEventListener('click', createPlayer)
-			// Read from data base
-
-			database.ref('scores/').once('value', function(snapshot) {
-				snapshot.forEach(function (childSnap) {
-					// storing all keys (i.e. "player1", "player2", ... )
-					let allPlayers = childSnap.child('name').val();
-					// storing all values of the child node "score"
-					let allScores = childSnap.child('score').val();
-					console.log(allScores);
-					// rendering the keys and values
-					document.getElementById('output').innerHTML += allPlayers + ' : ' + allScores + '<br>';
-				});
-		  });
-		
-		//write to database
-	
-		function createPlayer(){
-			var name = document.getElementById('name').value;
-			var score = document.getElementById('score').value;
-			//console.log(name + ', ' + score);
-			// storing user input in an object
-			var playerData = {
-				"name" : name,
-				"score" : score
-				
-			}
-			// generate a firebase key for the object
-			var newPlayer = database.ref('scores/').push().key;
-			// update database with player object
-			database.ref('scores/' + newPlayer).update(playerData);
-		}
-		
-		
-	</script>
 </body>
 </html>
