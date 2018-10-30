@@ -2,18 +2,24 @@
 @import 'variables';
 
 .exercise-title {
-	text-align: center;
+	white-space: nowrap;
 }
 
 .exercise-description {
-	font-size: 12px;
+	font-size: 14px;
 	background-color: $sec-color;
+	border-radius: 10px;
+	border: none;
+}
+.exercise-nav a {
+	color: black;
 }
 
 
 
-
-
+.exercise-img {
+	width: 30%;
+}
 
 
 
@@ -61,7 +67,7 @@ input {
 }
 .previous {
 	padding: 0 5px;
-	background-color: $second-color;
+	background-color: $sec-color;
 	color: rgba(0,0,0,0.50);
 	 
 }
