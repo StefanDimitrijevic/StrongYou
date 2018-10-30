@@ -1,6 +1,22 @@
 /* Scss Document */
 @import 'variables';
 
+.exercise-title {
+	text-align: center;
+}
+
+.exercise-description {
+	font-size: 12px;
+	background-color: $sec-color;
+}
+
+
+
+
+
+
+
+
 input {
 	width: 30px;
 }
@@ -14,7 +30,8 @@ input {
 		border: 1px solid grey;
 		
 		&:focus {
-			border-color: $primary-color;
+			border: 2px solid $prim-color;
+			outline: none;
 		}
 			
 		}
@@ -31,18 +48,20 @@ input {
 			text-align: center;
 	}
 		.custom-checkbox {
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 25px;
 		border: 1px solid grey;
 		border-radius: 5px;
 
 	}
 
 }
-
+.set {
+	font-weight: 600;
+}
 .previous {
 	padding: 0 5px;
-	background-color: $secondary-color;
+	background-color: $second-color;
 	color: rgba(0,0,0,0.50);
 	 
 }
