@@ -1,5 +1,5 @@
 /* Scss Document */
-$prim-color: #3ba6f7;
+@import 'variables';
 
 input {
 	width: 30px;
@@ -18,7 +18,7 @@ input {
 	}
 	
 	input, select, textarea{
-    color: #000;
+    color: $prim-color;
 }
 }
 

@@ -1,4 +1,5 @@
 /* Scss Document */
+/* _variables.scss */
 input {
   width: 30px; }
 
@@ -10,7 +11,7 @@ input {
   -webkit-appearance: none;
   margin: 0; }
 .user-input input, .user-input select, .user-input textarea {
-  color: #000; }
+  color: #3ba6f7; }
 
 .custom-checkbox {
   width: 30px;
