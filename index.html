@@ -52,8 +52,8 @@
                 <tr>
                     <td scope="row" class="set">1</td>
                     <td><p class="previous">12kg x 10</p></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="kg"></td>
+                    <td><input type="number" id="reps"></td>
                     <td><input type="checkbox" class="custom-checkbox"></td>
                 </tr>
                 <tr>
@@ -75,8 +75,47 @@
     </form>
     <div class="exercise-bottom-nav text-center">
         <button class="btn btn-group pl-5 pr-5 pt-3 pb-3 myBtn">Back</button>
-        <button class="btn btn-group pl-5 pr-5 pt-3 pb-3 myBtn">Next</button>
+        <button class="btn btn-group pl-5 pr-5 pt-3 pb-3 myBtn" id="submit">Next</button>
     </div>
 </div>
+	
+<script>
+			var database = firebase.database();
+			var submitButton = document.getElementById('submit');
+			submitButton.addEventListener('click', addSet)
+			// Read from data base
+
+			database.ref('workout-log/sessions-01/pull-ups/').once('value', function(snapshot) {
+				snapshot.forEach(function (childSnap) {
+					// storing all keys (i.e. "player1", "player2", ... )
+					let allPlayers = childSnap.child('kg').val();
+					// storing all values of the child node "score"
+					let allScores = childSnap.child('rep').val();
+					console.log(allScores);
+					// rendering the keys and values
+					document.getElementById('output').innerHTML += allPlayers + ' : ' + allScores + '<br>';
+				});
+		  });
+		
+		//write to database
+	
+		function addSet(){
+			var kg = document.getElementById('kg').value;
+			var rep = document.getElementById('rep').value;
+			//console.log(name + ', ' + score);
+			// storing user input in an object
+			var playerData = {
+				"kg" : name,
+				"rep" : score
+				
+			}
+			// generate a firebase key for the object
+			var newPlayer = database.ref('workout-log/sessions-01/pull-ups/').push().key;
+			// update database with player object
+			database.ref('workout-log/sessions-01/pull-ups/' + newPlayer).update(playerData);
+		}
+		
+		
+	</script>
 </body>
 </html>
