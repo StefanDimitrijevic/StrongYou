@@ -1,92 +1,7 @@
-<<<<<<< HEAD
 /*
 Error: Undefined variable: "$menu-toggler-color".
         on line 31 of C:/MAMP/htdocs/firebase/StrongYou/css/_forside.scss
         from line 3 of C:\MAMP\htdocs\firebase\StrongYou\css\main.scss
-=======
-/* Scss Document */
-/* _variables.scss */
-#mainCont {
-  margin-top: 8%;
-  font-size: 12px;
-  padding-left: 0px !important;
-  padding-right: 0px !important; }
-  #mainCont .navbar .animated-icon {
-    width: 30px;
-    height: 40px;
-    position: relative;
-    cursor: pointer;
-    margin-top: 50%; }
-  #mainCont .navbar .animated-icon span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0; }
-  #mainCont .navbar .animated-icon span {
-    background: #333333; }
-  #mainCont .navbar .animated-icon span:nth-child(1) {
-    top: 0px; }
-  #mainCont .navbar .animated-icon span:nth-child(2) {
-    top: 10px; }
-  #mainCont .navbar .animated-icon span:nth-child(3) {
-    top: 20px; }
-  #mainCont .navbar .animated-icon.open span:nth-child(1) {
-    top: 11px; }
-  #mainCont .navbar .animated-icon.open span:nth-child(2) {
-    opacity: 0;
-    left: -60px; }
-  #mainCont .navbar .animated-icon.open span:nth-child(3) {
-    top: 11px; }
-  #mainCont #buttonrow {
-    background-color: #f7f7f7;
-    height: 50px !important;
-    padding-left: 0px !important;
-    margin-top: 8%; }
-  #mainCont #buttonrow button {
-    font-size: 14px;
-    border: none;
-    width: 100%; }
-  #mainCont .buttons button {
-    background-color: #3ba6f7;
-    height: 50px;
-    color: white;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    background-color: #3ba6f7 !important; }
-  #mainCont .button2 {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    height: 50px; }
-  #mainCont .button2 button {
-    background-color: #f7f7f7;
-    height: 50px;
-    color: black;
-    padding-left: 0px !important;
-    padding-right: 0px !important; }
-  #mainCont #profile_tekst {
-    margin-top: 2%; }
-  #mainCont #strenghtmodule {
-    margin-top: 5%; }
-  #mainCont #intromodule {
-    border: 1px solid #3ba6f7;
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-bottom: 5%; }
-  #mainCont #sessions {
-    margin-top: 8%; }
-  #mainCont #sessions h5 {
-    font-size: 8px; }
-  #mainCont #sessions p {
-    font-size: 8px; }
-  #mainCont .deler {
-    width: 75%; }
-  #mainCont .sessiontekst {
-    margin-top: 2% !important; }
->>>>>>> 4d01639d6953015723270646357a653e11ab7b8f
 
 26: 
 27: 
@@ -100,7 +15,6 @@ Error: Undefined variable: "$menu-toggler-color".
 35: 			width: 40px;
 36: 			height: 25px;
 
-<<<<<<< HEAD
 Backtrace:
 C:/MAMP/htdocs/firebase/StrongYou/css/_forside.scss:31
 C:\MAMP\htdocs\firebase\StrongYou\css\main.scss:3
@@ -185,57 +99,3 @@ body:before {
   white-space: pre;
   font-family: monospace;
   content: "Error: Undefined variable: \"$menu-toggler-color\".\A         on line 31 of C:/MAMP/htdocs/firebase/StrongYou/css/_forside.scss\A         from line 3 of C:\MAMP\htdocs\firebase\StrongYou\css\main.scss\A \A 26: \A 27: \A 28: input {\A 29: 	width: 30px;\A 30: }\A 31: \A 32: .user-input {\A 33: 	\A 34: 	input[type=number] {\A 35: 			width: 40px;\A 36: 			height: 25px;"; }
-=======
-.exercise-description {
-  font-size: 14px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  border: none; }
-
-.exercise-nav a {
-  color: black; }
-
-.exercise-img {
-  width: 30%; }
-
-input {
-  width: 30px; }
-
-.user-input input[type=number] {
-  width: 40px;
-  height: 25px;
-  border-radius: 5px;
-  border: 1px solid grey; }
-  .user-input input[type=number]:focus {
-    border: 2px solid #3ba6f7;
-    outline: none; }
-.user-input input[type=number]::-webkit-inner-spin-button,
-.user-input input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
-.user-input input, .user-input select, .user-input textarea {
-  color: #3ba6f7;
-  font-weight: 600;
-  text-align: center; }
-.user-input .custom-checkbox {
-  width: 25px;
-  height: 25px;
-  border: 1px solid grey;
-  border-radius: 5px; }
-
-.set {
-  font-weight: 600; }
-
-.previous {
-  padding: 0 5px;
-  background-color: #f7f7f7;
-  color: rgba(0, 0, 0, 0.5); }
-
-.myBtn {
-  background-color: #f7f7f7; }
-
-/* SESSIONS PAGE */
-.headline p {
-  color: #3ba6f7;
-  margin: 10px; }
->>>>>>> 4d01639d6953015723270646357a653e11ab7b8f
