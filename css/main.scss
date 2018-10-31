@@ -85,3 +85,24 @@ input {
 	color: $prim-color;
 	margin: 10px;
 }
+
+.pullClass {
+	text-decoration: none;
+	color: black;
+}
+
+.pullClass:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.ring {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: $sec-color;
+	
+	p {
+		margin-top: 5px;
+	}
+}

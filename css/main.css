@@ -133,3 +133,19 @@ input {
 .headline p {
   color: #3ba6f7;
   margin: 10px; }
+
+.pullClass {
+  text-decoration: none;
+  color: black; }
+
+.pullClass:hover {
+  text-decoration: none;
+  color: black; }
+
+.ring {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f7f7f7; }
+  .ring p {
+    margin-top: 5px; }
