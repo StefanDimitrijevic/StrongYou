@@ -3,14 +3,12 @@
 #mainCont {
         margin-top: 8%;
         font-size: 12px;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
 
-
+		
         .navbar {
             .animated-icon {
                 width: 30px;
-                height: 40px;
+                height: 30px;
                 position: relative;
                 cursor: pointer;
                 margin-top: 50%;
@@ -62,7 +60,7 @@
         #buttonrow {
             background-color: $sec-color;
             height: 50px !important;
-            padding-left: 0px !important;
+      		padding: 0 !important;
             margin-top: 8%;
         }
         #buttonrow button {
@@ -71,12 +69,10 @@
             width: 100%;
         }
 
-        .buttons button {
+        .button1 button {
             background-color: $prim-color;
             height: 50px;
             color: white;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
             background-color: $prim-color !important;
         }
 
@@ -110,15 +106,15 @@
             margin-bottom: 5%;
         }
 
-        #sessions {
+        .sessions {
             margin-top: 8%;
         }
 
-        #sessions h5 {
+        .sessions h5 {
             font-size: 8px;
         }
 
-        #sessions p {
+        .sessions p {
             font-size: 8px;
         }
 
