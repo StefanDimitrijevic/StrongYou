@@ -28,8 +28,8 @@
 <div class="container">
     <h2>All players and scores</h2>
     <p id="previous"></p>
-	<input type="number" id="kgBefore01">
-	<input type="number" id="repsBefore02">
+	<input type="number" id="kgBefore01" value="">
+	<input type="number" id="repsBefore02" value="">
     <hr>
     <h2>Create new player</h2>
     <form action="">
@@ -59,6 +59,7 @@
 					// console.log(allReps);
 					// rendering the keys and values
 					document.getElementById('previous').innerHTML += allKg + 'kg x ' + allReps + 'reps<br>';
+					document.getElementById('kgBefore01').value = 'jhonnybravo;
 				});
 		  });
 		
