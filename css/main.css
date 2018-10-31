@@ -2,17 +2,23 @@
 /* _variables.scss */
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 /* _variables.scss */
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 #mainCont {
   margin-top: 8%;
   font-size: 12px; }
   #mainCont .navbar .animated-icon {
+=======
+.mainCont {
+  font-size: 12px;
+  color: black !important; }
+  .mainCont .navbar .animated-icon {
+>>>>>>> 91255d7cfa3c53d0c26632e40292d8e105629a59
     width: 30px;
     height: 30px;
     position: relative;
-    cursor: pointer;
-    margin-top: 50%; }
-  #mainCont .navbar .animated-icon span {
+    cursor: pointer; }
+  .mainCont .navbar .animated-icon span {
     display: block;
     position: absolute;
     height: 2px;
@@ -20,64 +26,67 @@
     border-radius: 9px;
     opacity: 1;
     left: 0; }
-  #mainCont .navbar .animated-icon span {
+  .mainCont .navbar .animated-icon span {
     background: #000; }
-  #mainCont .navbar .animated-icon span:nth-child(1) {
+  .mainCont .navbar .animated-icon span:nth-child(1) {
     top: 0px; }
-  #mainCont .navbar .animated-icon span:nth-child(2) {
+  .mainCont .navbar .animated-icon span:nth-child(2) {
     top: 10px; }
-  #mainCont .navbar .animated-icon span:nth-child(3) {
+  .mainCont .navbar .animated-icon span:nth-child(3) {
     top: 20px; }
-  #mainCont .navbar .animated-icon.open span:nth-child(1) {
+  .mainCont .navbar .animated-icon.open span:nth-child(1) {
     top: 11px; }
-  #mainCont .navbar .animated-icon.open span:nth-child(2) {
+  .mainCont .navbar .animated-icon.open span:nth-child(2) {
     opacity: 0;
     left: -60px; }
-  #mainCont .navbar .animated-icon.open span:nth-child(3) {
+  .mainCont .navbar .animated-icon.open span:nth-child(3) {
     top: 11px; }
-  #mainCont #buttonrow {
+  .mainCont .navbar .nav-item a {
+    color: #000000 !important; }
+  .mainCont #buttonrow {
     background-color: #f7f7f7;
     height: 50px !important;
     padding: 0 !important;
-    margin-top: 8%; }
-  #mainCont #buttonrow button {
+    margin-top: 8%;
+    padding: 0px !important; }
+  .mainCont #buttonrow button {
     font-size: 14px;
     border: none;
     width: 100%; }
-  #mainCont .button1 button {
+  .mainCont .button1 button {
     background-color: #3ba6f7;
     height: 50px;
     color: white;
     background-color: #3ba6f7 !important; }
-  #mainCont .button2 {
+  .mainCont .button2 {
     padding-left: 0px !important;
     padding-right: 0px !important;
     height: 50px; }
-  #mainCont .button2 button {
+  .mainCont .button2 button {
     background-color: #f7f7f7;
     height: 50px;
     color: black;
     padding-left: 0px !important;
     padding-right: 0px !important; }
-  #mainCont #profile_tekst {
+  .mainCont #profile_tekst {
     margin-top: 2%; }
-  #mainCont #strenghtmodule {
+  .mainCont #strenghtmodule {
     margin-top: 5%; }
-  #mainCont #intromodule {
+  .mainCont #intromodule {
     border: 1px solid #3ba6f7;
     padding-top: 15px;
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 5%; }
-  #mainCont .sessions {
+  .mainCont .sessions {
     margin-top: 8%; }
-  #mainCont .sessions h5 {
+  .mainCont .sessions h5 {
     font-size: 8px; }
-  #mainCont .sessions p {
+  .mainCont .sessions p {
     font-size: 8px; }
-  #mainCont .deler {
+  .mainCont .deler {
     width: 75%; }
-  #mainCont .sessiontekst {
+  .mainCont .sessiontekst {
     margin-top: 2% !important; }
 
 h1, h2, h3, h4 {
