@@ -2,12 +2,10 @@
 /* _variables.scss */
 #mainCont {
   margin-top: 8%;
-  font-size: 12px;
-  padding-left: 0px !important;
-  padding-right: 0px !important; }
+  font-size: 12px; }
   #mainCont .navbar .animated-icon {
     width: 30px;
-    height: 40px;
+    height: 30px;
     position: relative;
     cursor: pointer;
     margin-top: 50%; }
@@ -37,18 +35,16 @@
   #mainCont #buttonrow {
     background-color: #f7f7f7;
     height: 50px !important;
-    padding-left: 0px !important;
+    padding: 0 !important;
     margin-top: 8%; }
   #mainCont #buttonrow button {
     font-size: 14px;
     border: none;
     width: 100%; }
-  #mainCont .buttons button {
+  #mainCont .button1 button {
     background-color: #3ba6f7;
     height: 50px;
     color: white;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
     background-color: #3ba6f7 !important; }
   #mainCont .button2 {
     padding-left: 0px !important;
@@ -70,11 +66,11 @@
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 5%; }
-  #mainCont #sessions {
+  #mainCont .sessions {
     margin-top: 8%; }
-  #mainCont #sessions h5 {
+  #mainCont .sessions h5 {
     font-size: 8px; }
-  #mainCont #sessions p {
+  #mainCont .sessions p {
     font-size: 8px; }
   #mainCont .deler {
     width: 75%; }
