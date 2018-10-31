@@ -1,6 +1,8 @@
 /* Scss Document */
 /* _variables.scss */
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
 /* _variables.scss */
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
 #mainCont {
   margin-top: 8%;
   font-size: 12px; }
@@ -77,6 +79,9 @@
     width: 75%; }
   #mainCont .sessiontekst {
     margin-top: 2% !important; }
+
+h1, h2, h3, h4 {
+  font-family: 'Varela Round', sans-serif; }
 
 .exercise-title {
   white-space: nowrap; }
