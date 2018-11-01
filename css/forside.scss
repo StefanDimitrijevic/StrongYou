@@ -3,7 +3,7 @@
 .mainCont {
         font-size: 12px;
 		color: black !important;
-
+    }
 		
         .navbar {
             .animated-icon {
@@ -62,20 +62,17 @@
             background-color: $sec-color;
             height: 50px !important;
       		padding: 0 !important;
-            margin-top: 8%;
-			padding: 0px !important;
         }
         #buttonrow button {
             font-size: 14px;
-            border: none;
+            border: none!important;
             width: 100%;
+			
         }
 
         .button1 button {
-            background-color: $prim-color;
-            height: 50px;
-            color: white;
-            background-color: $prim-color !important;
+            background-color: $prim-color!important;
+            color: white!important;
         }
 
         .button2 {
@@ -113,11 +110,13 @@
         }
 
         .sessions h5 {
-            font-size: 8px;
+            font-size: 16px;
+			white-space: nowrap;
         }
 
         .sessions p {
-            font-size: 8px;
+            font-size: 14px;
+			white-space: nowrap;
         }
 
         .deler {
@@ -127,4 +126,4 @@
         .sessiontekst {
             margin-top: 2% !important;
         }
-    }
+
