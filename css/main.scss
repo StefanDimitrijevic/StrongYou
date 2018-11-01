@@ -1,5 +1,6 @@
 /* Scss Document */
 @import 'variables';
+@import 'forside';
 
 h1,h2,h3,h4 {
 	font-family: 'Varela Round', sans-serif;
@@ -72,8 +73,7 @@ input {
 .previous {
 	padding: 0 5px;
 	background-color: $sec-color;
-	color: rgba(0,0,0,0.50);
-	 
+	color: rgba(0,0,0,0.50);	 
 }
 
 .myBtn {
