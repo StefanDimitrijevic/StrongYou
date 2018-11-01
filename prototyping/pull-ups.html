@@ -1,11 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Strong You</title>
+<style>
+form p {
+	display: inline-block;
+}
+label {
+	display: block;
+}
+</style>
+<title>Firebase JS: Strong You</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="css/main.css">
 <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -19,66 +26,70 @@
   };
   firebase.initializeApp(config);
 </script>
+	
 </head>
-<pre id="output"></pre>
-	<pre id="output-1"></pre>
+
 <body>
-<div class="container">
-    <div class="exercise-title row">
-        <h4 class="col-4 text-left exercise-nav">&lt;<a href="sessions.html"> &#40;3&#47;12&#41;</a></h4>
-        <h2 class="text-center col-4">Pull Ups</h2>
-    </div>
-    <div class="text-center mt-3"> <img class="exercise-img" src="img/pull-up.svg" alt="pull up"> </div>
-    <div class="exercise-description py-3">
-        <ol>
-            <li>Sit down</li>
-            <li>Hold the kettlebell by its handle with both hands.</li>
-            <li>Move the kettlebell from left to right ove your hip.</li>
-            <li>Make sure o move the kettlebell with control.</li>
-            <li>Feet are either on the ground or elevated in the air.</li>
-        </ol>
-    </div>
-    <form action="">
-        <table class="table user-input table-borderless">
-            <thead>
-                <tr>
-                    <th scope="col">Set</th>
-                    <th scope="col">Previous</th>
-                    <th scope="col">Kg</th>
-                    <th scope="col">Reps</th>
-                    <th scope="col">Done</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="fs-1">
-                    <td scope="row" class="set">1</td>
-                    <td><p class="previous text-center" id="prev-1"></p></td>
-                    <td><input type="number" id="weight-1" placeholder="Kg" required></td>
-                    <td><input type="number" id="rep-1" placeholder="Reps" required></td>
-                    <td><input type="checkbox" class="custom-checkbox" id="done-1" required></td>
-                </tr>
-                <tr id="fs-2">
-                    <td scope="row" class="set">2</td>
-                    <td><p class="previous text-center" id="prev-2"></p></td>
-                    <td><input type="number" id="weight-2" placeholder="Kg" required disabled></td>
-                    <td><input type="number" id="rep-2" placeholder="Reps" required disabled ></td>
-                    <td><input type="checkbox" class="custom-checkbox" id="done-2" required  disabled></td>
-                </tr>
-                <tr id="fs-3">
-                    <td scope="row" class="set">3</td>
-                    <td><p class="previous text-center" id="prev-3"></p></td>
-                    <td><input type="number" id="weight-3" placeholder="Kg" required disabled></td>
-                    <td><input type="number" id="rep-3" placeholder="Reps" required  disabled></td>
-                    <td><input type="checkbox" class="custom-checkbox" id="done-3" required  disabled></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="exercise-bottom-nav text-center mb-3">
-            <button class="btn btn-group pl-5 pr-5 pt-3 pb-3 myBtn">Back</button>
-            <button type="submit" id="next" value="NEXT" class="btn btn-group pl-5 pr-5 pt-3 pb-3 myBtn">Next</button>
-        </div>
-    </form>
-</div>
+<h2>Data from previous session:</h2>
+<pre id="output"></pre>
+<hr>
+<h2>Pull-ups:</h2>
+<form id="form-1">
+  <fieldset id="fs-1">
+    <legend>Set 1</legend>
+    <p>
+      <label for="prev-1">Previous</label>
+      <input type="text" id="prev-1" disabled>
+    </p>
+    <p>
+      <label for="weight-1">Kg</label>
+      <input type="number" id="weight-1" placeholder="Kg" required>
+    </p>
+    <p>
+      <label for="rep-1">Reps</label>
+      <input type="number" id="rep-1" placeholder="Reps" required>	
+    </p>
+    <p>
+      <label for="done-1">Done</label>
+      <input type="checkbox" id="done-1" required>
+    </p>
+  </fieldset>
+  <fieldset id="fs-2" disabled>
+    <legend>Set 2</legend>
+    <p>
+      <input type="text" id="prev-2">
+    </p>
+    <p>
+      <input type="number" id="weight-2" placeholder="Kg" required>
+    </p>
+    <p>
+      <input type="number" id="rep-2" placeholder="Reps" required>
+    </p>
+    <p>
+      <input type="checkbox" id="done-2" required>
+    </p>
+  </fieldset>
+  <fieldset id="fs-3" disabled>
+    <legend>Set 3</legend>
+    <p>
+      <input type="text" id="prev-3" disabled>
+    </p>
+    <p>
+      <input type="number" id="weight-3" placeholder="Kg" required>
+    </p>
+    <p>
+      <input type="number" id="rep-3" placeholder="Reps" required>
+    </p>
+    <p>
+      <input type="checkbox" id="done-3" required>
+    </p>
+  </fieldset>
+  <p>
+    <input type="submit" id="next" value="NEXT">
+  </p>
+</form>
+<h2>Analytics:</h2>
+<pre id="output-1"></pre>
 <script>
 	var database = firebase.database();
 	var output = document.getElementById('output');
@@ -120,9 +131,9 @@
 			rTotalprev += parseInt(repetitions);
   			//console.log(weight + ', ' + repetitions + ', ' + done + '\n');
 			// rendering the keys and values
-			//output.innerHTML += weight + ' kg,  ' + repetitions + ' repetitions, ' + 	done + '<br>';
+			output.innerHTML += weight + ' kg,  ' + repetitions + ' repetitions, ' + done + '<br>';
 			// fill formfields with data from previous session
-			this['prev-'+i].innerHTML = weight + 'kg x ' + repetitions;
+			this['prev-'+i].value = weight + 'kg x ' + repetitions;
 			// increment i
 			i++;
  		});
@@ -151,13 +162,7 @@
 			i++;
 			// enable the next fieldset 8out of 3 possible) for user input (i is now +1 ;-))
 			if (i < 4){
-				this['weight-'+i].removeAttribute("disabled");
-			}
-			if (i < 4){
-				this['rep-'+i].removeAttribute("disabled");
-			}
-			if (i < 4){
-			this['done-'+i].removeAttribute("disabled");
+				this['fs-'+i].removeAttribute("disabled");
 			}
  		});
 		// analyse after (!) looping
@@ -166,7 +171,7 @@
 		let weightIncreasePct = ((wTotal * 100) / wTotalprev).toFixed(2);
 		let repIncreasePct = ((rTotal * 100) / rTotalprev).toFixed(2);
 		// creating the analytics output
-		//analytics.innerHTML = 'You increased the total weight by ' + wTotal + 'kg (+ ' + weightIncreasePct + '%)' +
+		analytics.innerHTML = 'You increased the total weight by ' + wTotal + 'kg (+ ' + weightIncreasePct + '%)' +
 		' and repetitions by ' + rTotal + 'x (+ ' + repIncreasePct + '%)';
   });
   // write to database
