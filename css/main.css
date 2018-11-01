@@ -73,5 +73,6 @@ input {
   height: 30px;
   border-radius: 50%;
   background-color: #f7f7f7; }
-  .ring p {
-    margin-top: 5px; }
+  .ring a {
+    text-decoration: none;
+    color: black; }
