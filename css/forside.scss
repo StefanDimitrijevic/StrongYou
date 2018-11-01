@@ -68,8 +68,10 @@
             border: none!important;
             width: 100%;
 			
-        }
 
+			
+        }
+		
         .button1 button {
             background-color: $prim-color!important;
             color: white!important;
@@ -98,7 +100,7 @@
         }
 
         #intromodule {
-            border: 1px solid $prim-color;
+            border: 2px solid $prim-color;
             padding-top: 15px;
             padding-right: 10px;
             padding-left: 10px;
@@ -127,3 +129,13 @@
             margin-top: 2% !important;
         }
 
+        .sessionlink {
+            color: black !important;
+			text-decoration: none !important;
+        }
+		button:focus {outline:0;}
+
+.button2:hover {
+
+	cursor: pointer!important;
+}

@@ -68,7 +68,7 @@
   margin-top: 5%; }
 
 #intromodule {
-  border: 1px solid #3ba6f7;
+  border: 2px solid #3ba6f7;
   padding-top: 15px;
   padding-right: 10px;
   padding-left: 10px;
@@ -90,3 +90,13 @@
 
 .sessiontekst {
   margin-top: 2% !important; }
+
+.sessionlink {
+  color: black !important;
+  text-decoration: none !important; }
+
+button:focus {
+  outline: 0; }
+
+.button2:hover {
+  cursor: pointer !important; }
